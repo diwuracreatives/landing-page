@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: sans-serif;
+    
+}
+ section{
+     display: flex;
+     flex-direction: row;
+ }
+ .container-1{
+    width: 50%;
+    height: 100vh;
+    background-color: whitesmoke;
+    
+}
+.nav-bar{
+    padding: 32px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-bar ul {
+  list-style: none;
+}
+.nav-bar ul li{
+    display: inline-flex;
+    margin-left: 20px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.nav-bar ul li a:active{
+    border-bottom: 2px solid black;
+  
+}
+.nav-bar ul li a:hover{
+  color: palevioletred;
+}
+.text-content{
+     margin-top: 40px;
+     margin-left: 16px;
+}
+.text-content h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    line-height: 40px;
+    font-size: 1.8rem;
+}
+.text-content p{
+  margin-top: 23px;
+ line-height: 25px;
+}
+.bottom-content {
+    margin-top: 200px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-content p{
+     padding-left: 10px;
+     text-align: center;
+     font-size: 12px;
+}
+.line{
+    width: 320px;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.container-2{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background: url('./middle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+@media only screen and (max-width:768px){
+    .line{
+        width: 180px;
+        height: 1px;
+        background-color: black;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .container-1{
+        width: 50%;
+        height: 100vh;
+        background-color: whitesmoke;
+        
+    }
+    .container-2{
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        background: url('./middle.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: whitesmoke;
+    }
+}
